@@ -33,6 +33,6 @@ for i in range(0,640):
 		t = rs.rs2_deproject_pixel_to_point(depth_intrin,[i,j],distance)
 		fo.write( str(t).strip('[').strip(']')+'\n' )
 
-print(name)
+print("File name "+name)
 print(time.time()-start)
 pipeline.stop()
